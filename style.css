@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    font-family: 'Marriweather', serif;
+}
+.all-content{
+    background: #f7f5f2;
+}
+html ::-webkit-scrollbar-track{
+    background: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+    background: #b2744c;
+    border-radius: 10px;
+}
+html ::-webkit-scrollbar{
+    width: 10px;
+}
+/*navbar*/
+#navbar{
+    background-color: #b2744c;
+}
+#logo img{
+    border-radius: 10px;
+    width: 5rem;
+    margin-left: 50px;
+}
+.navbar-nav{
+    margin-left: 20rem;
+}
+.nav-item .nav-link{
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    transform: 0.5s;
+    font-size: 20px;
+}
+.nav-item .nav-link:hover{
+    background: #f7f5f2;
+    border-radius: 5px;
+    columns: black;
+}
+
+/*Home*/
+#home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(15,23,43,.9), rgba(15,23,43,.9)),url(./images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#home .img-fluid{
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+#home .img{
+    position: absolute;
+    width: 25rem;
+    margin-left: 5rem;
+    height: auto;
+    border-radius: 15rem;
+    animation: imgRotate 50s linear infinite;
+}
+@keyframes imgRotate{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#home .content{
+    padding: 180px;
+    margin-left: 50px;
+}
+#home .content h3{
+    font-size: 50px;
+    color: white;
+}
+#home .content p {
+    margin-top: 10px;
+    color: white;
+}
+#btn{
+    width: 150px;
+    height: 35px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn:hover{
+    background: #b2744c;
+    color: white;
+}
+
+/*about*/
+#about{
+    width: 100%;
+    height: 100vh;
+}
+#about .container{
+    padding-top: 70px;
+
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.heading span{
+    color: #b2744c;
+}
+.about .card{
+    border-radius: 10px;
+}
+#about-btn{
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid #b2744c;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#about-btn:hover{
+    background-color: #b2744c;
+    color: white;
+}
+#about-btn a{
+    text-decoration: none;
+}
+@media screen and (max-width:982px){
+    #about p{
+        font-size: 8px;
+    }
+}
+
+/*topcard*/
+#top-cards{
+    width: 100%;
+    height: 60vh;
+    background: #f7f5f2;
+}
+.heading2{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.heading2 span{
+    color: #b2744c;
+}
+.top-cards .container{
+    margin-top: 30px;
+}
+.top-cards .card{
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.top-cards .card a{
+    text-decoration: none;
+}
+.top-cards .card h3{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.top-cards .card img{
+    border-radius: 10px;
+    width: 26rem;
+    height: 25rem;
+}
+.top-cards .card:hover{
+    transform: translateY(-10px);
+}
+
+/*menu*/
+#menu{
+    width: 100%;
+}
+.heading3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.heading3 span{
+    color: #b2744c;
+}
+.container2{
+    margin-top: 20px;
+}
+#menu .card{
+    box-shadow: rgba(149, 157,165, 0.2) 0px 8px 24px;
+}
+#menu .card img{
+    width: 305px;
+    height: 270px;
+}
+.star i{
+    color: #b2744c;
+}
+#menu h3{
+    text-align: center;
+    color: #b2744c;
+    margin-top: 10px;
+    font-size: 25px;
+}
+#menu p{
+    text-align: center;
+    font-size: 20px;
+    color: #b2744c;
+    padding-top: 10px;
+}
+#menu p span{
+    float: right;
+    cursor: pointer;
+}
+
+/*gallary*/
+#gallary{
+    width: 150%;
+}
+.heading5{
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    font-weight: bold;
+}
+#gallary .heading5 span{
+    color: #b2744c;
+}
+#gallary .card{
+    border-radius: 10px;
+    cursor: pointer;
+}
+#gallary .card img{
+    width: 26rem;
+    height: 17rem;
+}
+/*contact*/
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+}
+#contact .container{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(90deg, white 80%, #b2744c 20%);
+}
+.heading6{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 70px;
+    color: black;
+}
+.heading6 span{
+    color: #b2744c;
+}
+#contact p{
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+}
+#contact input,select{
+    width: 360px;
+    border: none;
+    border-bottom: 1px solid #b2744c;
+}
+#contact label{
+    width: 360px;
+    border: none;
+}
+#contact-btn{
+    width: 200px;
+    height: 36px;
+    border: none;
+    background: #b2744c;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#col{
+    width: 40%;
+    height: 56vh;
+    background: black;
+    margin-top: 78px;
+}
+#col1 img{
+    width: 100%;
+    height: 50vh;
+    margin-top: 10rem;
+}
+#contact h1{
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#contact #col p{
+    font-size: 15px;
+    color: white;
+    margin-left: 13px;
+    margin-top: 30px;
+}
+@media screen and (max-width:760px){
+    #contact .container{
+        background: white;
+    }
+    #col{
+        background: #b2744c;
+    }
+    #contact{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:400px){
+    #contact input{
+        width: 250px;
+    }
+}
+
+/*footer*/
+#footer{
+    width: 100%;
+    background: #b2744c;
+    margin-top: 50px;
+}
+.footer-logo img{
+    border-radius: 10px;
+    width: 150px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#footer .social-links i{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.credits{
+    color: white;
+    margin-top: 20px;
+    text-shadow: 0px 0px 1px black;
+}
+.credits a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.credits a span{
+    color: black;
+}
+.copyright span{
+    color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.reg-content{
+   width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(15,23,43,.9), rgba(15,23,43,.9)),url(./images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.heading7{
+    color: black;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-top: 1rem;
+}
+.heading7 span{
+    color: #b2744c;
+}
+.register{
+    margin-top: 10rem;
+    margin-left: 20rem;
+}
+.form{
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 40rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+#reg-btn{
+    width: 200px;
+    height: 36px;
+    border: none;
+    background: #b2744c;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 10rem;
+    cursor: pointer;
+}
+.reg-text{
+    margin-left: 7rem;
+    color: black;
+    font-weight: bold;
+    font-weight: 20px;
+    margin-top: 2rem;
+}
+.reg-text a{
+    color: black;
+    font-weight: bold;
+}
+/*Shop*/
+#shop{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+}
+#shop .container{
+    width: 200%;
+    height: 100vh;
+    background: linear-gradient(90deg, white 80%, #b2744c 20%);
+}
+#shop input{
+    width: 360px;
+    border: none;
+    border-bottom: 1px solid #b2744c;
+}
+#shop label{
+    width: 360px;
+    border: none;
+}
+#shop-btn{
+    width: 200px;
+    height: 36px;
+    border: none;
+    background: #b2744c;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#shop #col{
+    width: 40%;
+    height: 56vh;
+    background: black;
+    margin-top: 78px;
+}
+#shop #col p{
+    font-size: 15px;
+    color: white;
+    margin-left: 13px;
+    margin-top: 30px;
+}
+@media screen and (max-width:760px){
+    #shop .container{
+        background: white;
+    }
+    #col{
+        background: #b2744c;
+    }
+    #shop{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:400px){
+    #shop input{
+        width: 250px;
+    }
+}

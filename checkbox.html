@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkbox Example</title>
+<style>
+  /* Default styles for checkbox */
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Checked state styles */
+  input[type="checkbox"]:checked {
+    background-color: #2196F3;
+    border-color: #2196F3;
+  }
+  
+  /* Customizing the checkmark */
+  input[type="checkbox"]::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+  }
+  
+  /* Show checkmark when checked */
+  input[type="checkbox"]:checked::before {
+    visibility: visible;
+  }
+
+  /* Hide sub-checkbox by default */
+  .sub-checkbox {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="mainCheckbox"> Main Checkbox
+<div class="sub-checkbox" id="subCheckbox">
+  <input type="checkbox"> Sub Checkbox
+</div>
+
+<script>
+  // Get the main checkbox and sub-checkbox elements
+  const mainCheckbox = document.getElementById("mainCheckbox");
+  const subCheckbox = document.getElementById("subCheckbox");
+
+  // Add event listener to main checkbox
+  mainCheckbox.addEventListener("change", function() {
+    // If main checkbox is checked, display sub-checkbox; otherwise, hide it
+    if (mainCheckbox.checked) {
+      subCheckbox.style.display = "block";
+    } else {
+      subCheckbox.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>

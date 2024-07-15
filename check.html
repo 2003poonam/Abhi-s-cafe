@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="" id="maincheck" onchange="check()">
+
+    <div id="subcheck" style="display: none;">
+        <label for="subcheck">Subcheck</label>
+        <input type="checkbox" name="" id="subcheckbox">
+    </div>
+
+    <script>
+        function check(){
+            var maincheck = document.getElementById("maincheck");
+            var subcheck = document.getElementById("subcheck");
+
+            if(maincheck.checked){
+                subcheck.style.display = "block";
+            }else{
+                subcheck.style.direction = "none";
+            }
+        }
+    </script>
+</body>
+</html>
